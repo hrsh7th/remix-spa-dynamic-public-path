@@ -16,7 +16,7 @@ execSync('npx remix vite:build', {
   const body = readFileSync(indexHTML, 'utf-8');
   writeFileSync(indexHTML, (
     body
-      .replaceAll(/<\/head>/g, '<script>window.__REMIX_PUBLIC_PATH = "<%= remix_public_path %>";</script></head>')
+      .replaceAll(/<\/head>/g, '<script>window.__REMIX_PUBLIC_PATH__ = "<%= remix_public_path %>";</script></head>')
       .replaceAll(/assets\//g, '<%= remix_public_path %>/assets/')
   ));
   console.log('Modified `index.html` public paths.');

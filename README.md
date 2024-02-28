@@ -2,6 +2,11 @@
 
 The workaround for delivering only static resources from your own CDN in Remix SPA.
 
+## DEMO
+
+- `npm run demo`
+- Open `http://localhost:3000/demo`
+
 ## Explanation
 
 1. Modify `index.html` and `manifest-*.js` that built by Remix
